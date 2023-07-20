@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+//   src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+$white: rgb(243, 243, 243);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $white;
+  font-family: $font-1;
+}
+
+li {
+    list-style-type: none;
+  }

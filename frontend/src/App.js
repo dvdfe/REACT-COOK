@@ -1,10 +1,16 @@
+import React from 'react';
+import Header from "./components/Header"
+import Recipes from './components/Recipes';
+import Search from './components/Search';
 
-function App() {
+const App = () => {
   return (
     <div>
-     <h1>hello</h1>
+      <Header/> 
+      <Search/>
+      <Recipes/>
     </div>
   );
-}
+};
 
 export default App;

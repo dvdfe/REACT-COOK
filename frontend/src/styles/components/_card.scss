@@ -1,0 +1,19 @@
+.g-4 {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    .btn-card {
+      border-radius: 35px;
+      border: solid 1px;
+      padding: 5px;
+      background: #cfe2ff;
+    }
+  }

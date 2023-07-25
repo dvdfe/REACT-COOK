@@ -1,4 +1,3 @@
-// import React from "react";
 import { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
@@ -23,7 +22,7 @@ function GridExample({ recette }) {
     <Row xs={1} md={2} className="g-4">
       <Col>
         <Card>
-          <Card.Img variant="top" src={recette.strMealThumb} />
+          <Card.Img variant="top" src={recette.strMealThumb} alt={"photo " + recette.strMeal}/>
           <Card.Body>
             <Card.Title>
               <h4>{recette.strMeal}</h4>

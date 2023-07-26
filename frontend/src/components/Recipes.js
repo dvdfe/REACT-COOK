@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import axios from "axios";
+import Navigation from "./Navigation";
+import Header from "./Header";
 
 const Recipes = () => {
   const [data, setData] = useState([]);
@@ -16,6 +18,8 @@ const Recipes = () => {
 
   return (
     <div>
+      <Header/>
+      <Navigation/>
       <input
         type="text"
         id="search"

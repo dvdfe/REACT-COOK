@@ -7,7 +7,12 @@ const MyRecipes = () => {
         <div>
             <Header/>
             <Navigation/>
-            <h1>Mes recettes</h1>
+            <h2>Mes recettes</h2>
+            <form className="post-form">
+                <input type="text"  placeholder="Nom"/>
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" value="Envoyer" />
+            </form>
         </div>
     );
 };

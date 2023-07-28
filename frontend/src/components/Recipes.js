@@ -20,6 +20,7 @@ const Recipes = () => {
     <div>
       <Header/>
       <Navigation/>
+      <h2>Choisis ta recette !</h2>
       <input
         type="text"
         id="search"

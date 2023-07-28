@@ -1,8 +1,23 @@
 import React from 'react';
 import Header from './Header';
 import Navigation from './Navigation';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Posts from './Posts';
 
 const MyRecipes = () => {
+const [commentData, setCommentData] = useState([])
+
+
+    const getData= ()=>{
+        axios.get("http://localhost:3004/comments")
+        .then((res) => setCommentData(res.data))
+    }   
+    
+    useEffect(()=>{
+        getData()
+    }, [])
+
     return (
         <div>
             <Header/>
@@ -15,6 +30,11 @@ const MyRecipes = () => {
                 <input type="text"  placeholder="Url de l'image ..."/>
                 <input type="submit" value="Envoyer" />
             </form>
+            <ul>
+               {commentData && commentData.map((post) =>(
+                   <Posts key={post.id} post={post}/>
+               ))}
+            </ul>
         </div>
     );
 };

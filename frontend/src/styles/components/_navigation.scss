@@ -1,20 +1,24 @@
+$background-color: #FFC39B;
+$text-color: #fff;
+$link-color: #fff;
+
 .navigation {
-  ul {
-    display: flex;
-    margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background-color;
+  color: $text-color;
+  padding: 20px 20px;
+  border-radius: 75px;
 
-    a {
-      text-decoration: none;
-      padding: 10px;
-      color: black;
-      &::after{
-          border-bottom: 1px solid black;
-      }
+  a {
+    color: $link-color;
+    text-decoration: none;
+    margin-left: 20px;
 
-      li {
-        cursor: pointer;
-      }
+    &:hover {
+      text-decoration: underline;
     }
-    
   }
 }

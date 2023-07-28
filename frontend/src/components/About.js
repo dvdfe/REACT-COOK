@@ -12,7 +12,7 @@ const About = () => {
         MARMICOOK est une application web react avec appel à une API de cuisine,
         j'utilise plusieurs technique javascript et react pour m'entraîner, le
         site sera sûrement amener à évoluer avec le temps. Pour l'appel à l'API
-        j'utilise axios, j'utilise également sass et bootstrap-react.
+        j'utilise axios, j'utilise également sass et bootstrap-react. J'utilise également un fake server (json-server) pour pouvoir utiliser mon application web comme CRUD
       </p>
       <br />
       <p>

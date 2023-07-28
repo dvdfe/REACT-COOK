@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "author": "Nicolas",
+      "image": "https://www.themealdb.com/images/media/meals/58oia61564916529.jpg",
+      "plate-name": "Le plat",
+      "content": "Mon commentaire",
+      "date": 1621530288602,
+      "id": 1
+    },
+    {
+      "author": "David",
+      "image": "https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg",
+      "plate-name": "Le plat",
+      "content": "Mon commentaire",
+      "date": 1621530288602,
+      "id": 2
+    },
+    {
+      "author": "Chef Etchebest",
+      "image": "https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg",
+      "plate-name": "Le plat",
+      "content": "Mon commentaire",
+      "date": 1621530288602,
+      "id": 3
+    }
+  ]
+}

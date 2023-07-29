@@ -30,7 +30,7 @@ const [commentData, setCommentData] = useState([])
                 <input type="text"  placeholder="Url de l'image ..."/>
                 <input type="submit" value="Envoyer" />
             </form>
-            <ul>
+            <ul className="post-display">
                {commentData && commentData.map((post) =>(
                    <Posts key={post.id} post={post}/>
                ))}

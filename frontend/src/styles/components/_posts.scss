@@ -22,6 +22,11 @@ $cardMargin: 10px;
     font-size: 18px;
     font-weight: bold;
     color: $primaryColor;
+    em {
+        display: block;
+        font-size: 14px;
+        color: #888;
+      }
   }
 
   .user {

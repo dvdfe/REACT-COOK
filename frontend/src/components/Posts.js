@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 const dateFormater = (date) => {
   let newDate = new Date(date).toLocaleDateString("fr-FR", {
@@ -12,7 +13,13 @@ const dateFormater = (date) => {
   return newDate;
 };
 
+
 const Posts = ({ post }) => {
+
+  const handleDelete = () => {
+    axios.delete("http://localhost:3004/comments/" + post.id);
+  };
+
   return (
     <li className="post-card">
       <img src={post.image} alt={"Photo du plat " + post.image} />
@@ -23,8 +30,8 @@ const Posts = ({ post }) => {
       <div className="user">{post.author}</div>
       <p className="comment">{post.content}</p>
       <div className="btn-card">
-      <button>Modifier</button>
-      <button>Supprimer</button>
+        <button>Modifier</button>
+        <button onClick={() => handleDelete()}>Supprimer</button>
       </div>
     </li>
   );

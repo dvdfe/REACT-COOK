@@ -14,7 +14,7 @@ const [image, setImage] = useState("")
 
 const handleImageChange = (e) =>{
     const imageUrl = e.target.value;
-    setImage(imageUrl !== ("") ? imageUrl : "https://fotomelia.com/wp-content/uploads/edd/2015/11/bonhomme-blanc-3d-images-gratuites-libres-de-droits-creative-commons9-1560x1560.jpg")
+    setImage(imageUrl !== ("") ? imageUrl : "https://stock.wikimini.org/w/images/c/c7/Point-d%27interrogation.png")
 }
 
 

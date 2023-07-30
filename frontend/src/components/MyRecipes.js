@@ -58,7 +58,9 @@ const handleImageChange = (e) =>{
                 <input type="submit" value="Envoyer" />
             </form>
             <ul className="post-display">
-               {commentData && commentData.map((post) =>(
+               {commentData && commentData
+               .sort((a, b) => b.date - a.date)
+               .map((post) =>(
                    <Posts key={post.id} post={post}/>
                ))}
             </ul>

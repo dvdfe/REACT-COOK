@@ -1,5 +1,5 @@
-$primaryColor: #FFB58A;
-$secondaryColor: #FFC39B;
+$primaryColor: #ffb58a;
+$secondaryColor: #ffc39b;
 $cardMargin: 10px;
 
 .post-card {
@@ -23,10 +23,10 @@ $cardMargin: 10px;
     font-weight: bold;
     color: $primaryColor;
     em {
-        display: block;
-        font-size: 14px;
-        color: #888;
-      }
+      display: block;
+      font-size: 14px;
+      color: #888;
+    }
   }
 
   .user {
@@ -39,17 +39,31 @@ $cardMargin: 10px;
     color: #333;
     margin-top: 12px;
   }
-}
-
-.post-display{
+  .btn-card {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-} 
+    button {
+      padding: 5px 20px 5px 20px;
+      margin-top: auto;
+      border-radius: 30px;
+      background-color: $secondaryColor;
+      color: #fff;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-@media screen and (max-width: 768px) {
-    .post-display {
-      flex-direction: column; 
-      align-content: center;
     }
   }
+}
+
+.post-display {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .post-display {
+    flex-direction: column;
+    align-content: center;
+  }
+}

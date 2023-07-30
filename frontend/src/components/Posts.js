@@ -22,6 +22,10 @@ const Posts = ({ post }) => {
       </div>
       <div className="user">{post.author}</div>
       <p className="comment">{post.content}</p>
+      <div className="btn-card">
+      <button>Modifier</button>
+      <button>Supprimer</button>
+      </div>
     </li>
   );
 };

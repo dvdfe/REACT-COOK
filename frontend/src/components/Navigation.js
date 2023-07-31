@@ -9,10 +9,13 @@ const Navigation = () => {
           <NavLink to="/">Accueil</NavLink>
         </li>
         <li>
-          <NavLink to="/about">À propos</NavLink>
+          <NavLink to="/random-recipe">Choisis pour moi</NavLink>
         </li>
         <li>
           <NavLink to="/my-recipes">Mes recettes</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">À propos</NavLink>
         </li>
       </ul>
     </div>

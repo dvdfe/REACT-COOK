@@ -11,7 +11,7 @@ function GridExample({ recette }) {
   };
 
   const renderInstructions = () => {
-    const instructions = recette.strInstructions.split('. '); // Diviser les instructions en phrases
+    const instructions = recette.strInstructions.split(". "); // Diviser les instructions en phrases
 
     return instructions.map((instruction, index) => (
       <p key={index}>{instruction}</p> // Créer un élément <p> pour chaque phrase
@@ -22,7 +22,11 @@ function GridExample({ recette }) {
     <Row xs={1} md={2} className="g-4">
       <Col>
         <Card>
-          <Card.Img variant="top" src={recette.strMealThumb} alt={"photo " + recette.strMeal}/>
+          <Card.Img
+            variant="top"
+            src={recette.strMealThumb}
+            alt={"photo " + recette.strMeal}
+          />
           <Card.Body>
             <Card.Title>
               <h4>{recette.strMeal}</h4>
@@ -32,8 +36,10 @@ function GridExample({ recette }) {
             </Card.Title>
             <Card.Text>
               {showInstructions
-                ? renderInstructions() // Appeler la fonction renderInstructions pour afficher les phrases avec un retour à la ligne
-                : `${recette.strInstructions.slice(0, 100)}...`}
+                ? renderInstructions()
+                : recette.strInstructions
+                ? `${recette.strInstructions.slice(0, 100)}...`
+                : "Instructions non disponibles"}
             </Card.Text>
             <button className="btn-card" onClick={handleClick}>
               {showInstructions ? "Cacher" : "Afficher"} les instructions

@@ -1,7 +1,8 @@
 import React from 'react';
 import Recipes from './components/Recipes';
-import MyRecipes from "./components/MyRecipes"
-import About from "./components/About"
+import MyRecipes from "./components/MyRecipes";
+import About from "./components/About";
+import RandomRecipe from "./components/RandomRecipe";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
       <Route path="/" element={<Recipes/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/my-recipes" element={<MyRecipes/>}/>
+      <Route path="/random-recipe" element={<RandomRecipe/>}/>
       <Route path="*" element={<Recipes/>}/>
     </Routes>
     </BrowserRouter>
